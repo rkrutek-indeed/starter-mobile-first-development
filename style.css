@@ -1,5 +1,8 @@
 main {
   margin-top: 60px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 main h1 {
@@ -26,4 +29,39 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+/*img {*/
+/*  width: 100%;*/
+/*}*/
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.imgbg {
+  background-color: #7a6262;
+  padding: 5px;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+}
+
+.item {
+  flex: 1;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.item-bigger {
+  flex: 2;
+}
+
+img {
+  width: 100%;
 }
